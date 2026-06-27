@@ -3,6 +3,10 @@
 *.env
 .env.*
 
+# Playbooks & guides (local only)
+agent_builder_playbook.md
+GETTING_STARTED.md
+
 # Python
 .venv/
 __pycache__/
