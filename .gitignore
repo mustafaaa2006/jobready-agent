@@ -6,6 +6,8 @@
 # Playbooks & guides (local only)
 agent_builder_playbook.md
 GETTING_STARTED.md
+DEMO_SCRIPT.txt
+jobready-agent/DEMO_SCRIPT.txt
 
 # Python
 .venv/
