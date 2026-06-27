@@ -1,4 +1,4 @@
-# JobReady Agent 🚀
+# JobReady Agent 
 
 **Coaching unemployed youth through resume building, interview prep, and local job matching.**
 
