@@ -2,7 +2,30 @@
 
 **Coaching unemployed youth through resume building, interview prep, and local job matching.**
 
-An intelligent, multi-agent ADK 2.0 career coaching system. JobReady breaks down the daunting task of finding employment into manageable steps, offering tailored advice, actionable feedback, and real-time insights into the job market.
+JobReady is a state-of-the-art, secure, multi-agent career coaching assistant designed to empower unemployed youth, career-transitioners, and entry-level job seekers. Built using the advanced **Google Agent Development Kit (ADK) 2.0** framework, JobReady guides users through the job-hunting journey by breaking it down into actionable, structured, and manageable steps.
+
+Unlike generic chatbots, JobReady operates as a coordinated team of specialized AI agents directed by an intelligent orchestrator. By leveraging real-time tools via a dedicated FastMCP server, the agent provides personalized resumes, realistic interview coaching, and localized job matching while enforcing strict domain-safety guidelines.
+
+---
+
+### Key Features & Capabilities
+
+- **📋 Intelligent Career Intake (Human-in-the-Loop):** On the first interaction, JobReady pauses to gather structured user context—such as educational background, current skillsets, work history, and career goals—to ensure all subsequent advice is highly personalized.
+- **🛡️ Secure Security Checkpoint:** A safety-first gatekeeper node that scrubs sensitive PII (emails, phone numbers, SSNs, National IDs, Date of Birth), detects prompt injection attempts, and enforces strict ethical boundaries (e.g., blocking requests on how to fake credentials or lie on resumes).
+- **🤖 Multi-Agent Delegation:**
+  - **Orchestrator Agent:** The central dispatcher that evaluates user requests and delegates them dynamically to one or more specialist sub-agents.
+  - **Resume Builder Agent:** Analyzes CV content, highlights transferable skills, and provides structured templates and actionable tips for improvement.
+  - **Interview Coach Agent:** Conducts role-specific interview preparation, generates mixed behavioral, situational, and technical questions, and offers feedback using the STAR method.
+  - **Job Matcher Agent:** Searches available job listings, aligns them with candidate profiles, and outlines a step-by-step career path.
+- **🔌 JobReady FastMCP Toolset:** Powered by a local Model Context Protocol (MCP) server containing specialized domain tools:
+  - `search_job_listings`: Queries entry-level and junior job opportunities based on location and skills.
+  - `analyse_resume`: Scores resumes (0–100) based on presence of essential sections and action verbs.
+  - `get_interview_questions`: Retrieves tailored questions for top entry-level roles (e.g., admin, customer support, IT, dev).
+  - `check_skill_gap`: Compares candidate skills against job requirements, computes readiness, and recommends free learning courses.
+  - `get_salary_insights`: Calculates salary ranges and provides negotiation strategies adjusted by geographic location and experience.
+
+---
+
 
 ## Prerequisites
 - Python 3.11+
